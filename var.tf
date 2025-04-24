@@ -14,8 +14,6 @@ variable "vpc_attachments" {
     additional_tags    = map(string)
   }))
 }
-<<<<<<< HEAD
-=======
 
 variable "create_tgw_route_table" {
   description = "Boolean to determine if a new Transit Gateway Route Table should be created."
@@ -47,4 +45,3 @@ variable "transit_gateway_route_table_id" {
   description = "ID of the Transit Gateway Route Table"
   type        = string
 }
->>>>>>> 59253ee (added routes)
