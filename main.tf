@@ -5,11 +5,7 @@ module "transit_gateway" {
 module "transit_gateway_vpc_attachments" {
   source                = "./tgw-attachment"
   transit_gateway_id    =   module.transit_gateway.transit_gateway_id
-<<<<<<< HEAD
   vpc_attachments       = var.vpc_attachments
-}
-=======
-  vpc_attachments    = var.vpc_attachments
 }
 
 module "tgw_routes" {
@@ -21,4 +17,3 @@ module "tgw_routes" {
   transit_gateway_attachment_id   = var.transit_gateway_attachment_id
   transit_gateway_route_table_id  = var.transit_gateway_route_table_id
 }
->>>>>>> 59253ee (added routes)
